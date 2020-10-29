@@ -45,7 +45,3 @@ num_users = len(users) # length of the users list
 avg_connections = total_connections / num_users # 2.4
 
 
-# create a list (user_id, number_of_friends)
-num_friends_by_id = [(user["id"], number_of_friends(user))for user in users]
-sorted(num_friends_by_id,key=lambda (user_id, num_friends): num_friends,reverse=True)
-
